@@ -33,7 +33,7 @@ void loop() {
     case 0:
     chooseDifficulty();
     break;
-    
+
     case 1:
     chooseDifficulty();
     endgame = 50;
@@ -105,8 +105,9 @@ void spin() {
     delay(1);
     if((i == store) && (BB == true)) {
       LED();
-      //ping();
+      ping();
       point++;
+      stopwatch = stopwatch - reduce;
       Serial.print("Score: ");
       Serial.println(point);
       BB = false;
