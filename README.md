@@ -17,9 +17,11 @@ Level 3: Make it up to 100 points. Speed will be the same as level one but due t
 Input/Outputs:
 There will be three inputs and three outputs.
 
-Input 1 (Right Button): This will be the button to set the difficulty level going from 1 to 3 and resetting to 1 after 3. It will use an attach interrupt on 4 and a for loop will determine what lights are on.
+Input 1 (Right Button): This will be the button to set the difficulty level going from 1 to 3 and resetting to 1 after 3. It will use an attach interrupt on pin 4 and a for loop will determine what lights are on.
 
-Input 2 (Left Button): This will be the button you use to time your presses right on the LED.
+Input 2 (Left Button): This will be the button you use to time your presses right on the LED and to start the game. It will use an attach interrupt on pin 5.
+
+Input 3 (SlideSwitch): This will be the input where you can reset everything at any moment and take you back to choosing your difficulty. It will use an attach interrupt on pin 7.
 
 Output 1 (LEDs): There will be one bright green LED sitting on a random spot. The other LED will be a different color spinning around the LEDs. It will react to the right button press depending if you timed it right or not. If you miss the timing of the button press it will play an angry/red animation at you. If you make it to the end depending on the difficulty level, it will play a happy/green animation at you. 
 
