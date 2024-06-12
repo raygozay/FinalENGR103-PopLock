@@ -224,6 +224,9 @@ void reset() { //This is the switch function that allows you to reset the game t
     game = false;
     gameOver = false;
     gameW = false;
+    point = 0;
+    mode = 0;
+    stopwatch = 300;
     CircuitPlayground.clearPixels();
     chooseDifficulty();
     switchFlag = false;
